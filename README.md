@@ -34,7 +34,7 @@
 
   ## Deployment
   
-  This app is deployed [here](https://git.heroku.com/workingitout.git)
+  This app is deployed [here](https://workingitout.herokuapp.com/)
   
 
 
