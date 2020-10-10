@@ -2,15 +2,12 @@
 const express = require('express');
 const logger = require('morgan');
 const mongoose = require('mongoose');
-const path = require("path");
-const apiRoutes = require('./routes/api-routes');
-const htmlRoutes = require('./routes/html-routes');
+
 const PORT = process.env.PORT || 3000;
 
 const app = express();
 
-app.use(apiRoutes);
-app.use(htmlRoutes);
+
 
 
 app.use(logger("dev"));
@@ -30,6 +27,10 @@ mongoose.connect(
       useFindAndModify: false
     }
   );
+
+  // routes
+app.use(require("./routes/api-routes.js"));
+app.use(require("./routes/view.js"));
 
 
 app.listen(PORT, () => {
