@@ -6,8 +6,8 @@
 
   ## Table of Contents
 
-  - [Image](#image)
   - [Description](#description)
+  - [Image](#image)
   - [Business Context](#businesscontext)
   - [Deployment](#deployment)
   - [Contributors](#contributors)
@@ -20,7 +20,7 @@
   This application uses a Mongo database with a Mongoose schema to handle routes with Express. You can add exercises to a new or previous workout plan and then view the combined weight of multiple exercises. 
 
 
-  
+
   ![](public/images/screenshot.png)
   ![](public/images/stats.png)
 
